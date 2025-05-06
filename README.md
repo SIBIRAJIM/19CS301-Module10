@@ -1,142 +1,181 @@
 # 19CS301-Module10
-###EX: 10.a  STACK
-### Aim: To Write a python program to get the integer values from the user and push only the odd number into the stack and later pop the last 2 elements
+### EX: 10.a  STACK
+### Aim: 
+To Write a python program to get the integer values from the user and push only the odd number into the stack and later pop the last 2 elements.
+
 ### Algorithm:
-STEP 1: Start.
 
-STEP 2: Create a list and a variable n.
+1. Start
+2. Input n
+3. Initialize an empty list l
+4. Repeat n times:
+   a. Input m
+   b. If m is odd (i.e., m % 2 != 0), append m to list l
+5. Print list l (containing only odd numbers)
+6. Repeat 2 times:
+   a. Remove the last element from l using pop()
+7. Print the updated list l
+8. End
 
-STEP 3: Get the value of n from user.
 
-STEP 4: Using loop append only odd elements in the stack.
-
-STEP 5 : Using another loop using built-in pop operation pop the last two elements.
-
-STEP 6: Print the result.
-
-STEP 7 : Stop.
 ### Program:
-```
-l = []
-n = int(input())
-for i in range(n):
-       x = int(input())
-       if x%2!=0:
-            l.append(x)
- print(l)
-for i in range(2):
-      l.pop()
-     print(l)
-```
-### Output:
- ![image](https://github.com/user-attachments/assets/d2ce0434-7594-41af-ba20-3d7ecf9e0d93)
+```python
+# Name: Nidhish B
+# Reg.No: 212223050032
 
-### Result: Thus, the given program is implemented and executed successfully .
+n=int(input())
+l=[]
+for i in range(n):
+    m=int(input())
+    if m%2!=0:
+        l.append(m)
+        
+print(l)
+
+for i in range(2):
+    l.pop()
+
+print(l)
+```
+
+### Output:
+
+![image](https://github.com/user-attachments/assets/57fdc76c-c070-42b0-b23a-6de0038f3ee7)
+
+### Result: 
+
+Thus, the given program is implemented and executed successfully.
  
 
 
 ### EX: 10.2 IMPLEMENTATION OF STACK
-### Aim: To Write a python program to implement the stack using deque method for rotating the stack.
+
+### Aim:
+
+To Write a python program to implement the stack using deque method for rotating the stack.
+
 ### Algorithm:
 
-STEP 1: Start.
+1. Start
+2. Input n (number of rotation steps)
+3. Initialize an empty deque
+4. Input r (number of elements to add to the deque)
+5. Repeat r times:
+   a. Input an integer
+   b. Append it to the deque
+6. Display "Stack before rotation" and the deque
+7. Rotate the deque by n steps using rotate(n)
+8. Display "Stack after rotation" and the rotated deque
+9. End
 
-STEP 2: Import collections and import deque.
-
-STEP 3: Create a list and get the input from user.
-
-STEP 4: Create a variable n and get number of inputs from user.
-
-STEP 5 : Using a loop get the inputs from user and append in deque.
-
-STEP 6: Using rotate function rotate the stack.
-
-STEP 7 : Print the result. 
-
-STEP 8 : Stop.
 ### Program: 
-```
+
+```python
+# Name: Nidhish B
+# Reg.No: 212223050032
+
 import collections
 def fun(n):
-   stack = collections.deque([])
-   a=int(input())
-   for i in range (a):
-         x=stack.append(int(input()))
-     print(f"Stack before rotation {stack}") stack.rotate(n)
-print(f"Stack after rotation {stack}")
+    de=collections.deque([])
+    r=int(input())
+    for i in range(r):
+        de.append(int(input()))
+    print('Stack before rotation',de)
+    de.rotate(n)
+    print('Stack after rotation',de)
+    
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/f42c4ec6-578c-418a-8f66-cf70abe7dc54)
 
-### Result: Thus, the given program is implemented and executed successfully .
+![image](https://github.com/user-attachments/assets/b532bf85-e945-4a42-8bd3-f4ff0df7ddf2)
+
+### Result:
+
+Thus, the given program is implemented and executed successfully.
  
 
 
 EX: 10.3 QUEUE
-### Aim: To Write a python program to implement the stack using deque method for rotating the stack.
+### Aim: 
+
+To Develop a python program to remove the last 3 values from the queue.
+
 ### Algorithm:
 
-STEP 1: Start.
+1. Start
+2. Initialize an empty list q
+3. Input an integer n (number of elements to be added to the list)
+4. Repeat the following n times:
+    a. Input an integer x
+    b. Append x to the list q
+5. Repeat the following 3 times:
+    a. Remove the last element of the list q using pop()
+6. Display the updated list q
+7. End
 
-STEP 2: Import collections and import deque.
-
-STEP 3: Create a stack and a variable n.
-
-STEP 4: Get the number of inputs from user.
-
-STEP 5: Using a loop get the inputs from user.
-
-STEP 6: Append the even and unique elements in the stack.
-
-STEP 7: Print the result.
 ### Program:
-```
-import collections
-stack = collections.deque([])
-n = int(input())
+```python
+# Name: Nidhish B
+# Reg.No: 212223050032
+
+q=[]
+n=int(input())
+
 for i in range(n):
-       x = int(input())
-        if x not in stack:
-          if x%2==0:
-             stack.appendleft(x)
-print(stack)
+    q.append(int(input()))
+
+for i in range(3):    
+    q.pop()
+print(q)
 ```
+
 ### Output:
-![image](https://github.com/user-attachments/assets/de6e3e09-b10b-42d4-9faf-32fcf990f29a)
- 
-### Result: Thus, the given program is implemented and executed successfully .
+![image](https://github.com/user-attachments/assets/fe9452ee-ba38-415b-b61b-8373f9852608)
+
+### Result:
+Thus,the given program is implemented and executed successfully.
 
 
 ### EX: 10.4 IMPLEMENTATION OF QUEUE
-### Aim: To Develop a python program to get the 4 integer values from user and display the values using multiprocessing library
+
+### Aim: 
+
+To Develop a python program to get the 4 integer values from user and display the values using multiprocessing library
+
 ### Algorithm:
 
-STEP 1: Start.
+1. Start
+2. Create an empty queue `q` using multiprocessing.Queue
+3. Repeat 4 times:
+    a. Input an integer x
+    b. Enqueue x into queue `q` using q.put(x)
+4. Repeat 4 times:
+    a. Dequeue an element from queue `q` using q.get()
+    b. Print the dequeued element
+5. End
 
-STEP 2: From Multiprocessing Import Queue.
-
-STEP 3: Create a list and get the input from user.
-
-STEP 4 : Append the elements in the list.
-
-STEP 5: Using 'get' built-in function print the list.
-
-STEP 6 : Print the result.
-
-STEP 7 : Stop.
 ### Program:
-```
+
+```python
+# Name: Nidhish B
+# Reg.No: 212223050032
+
 from multiprocessing import Queue
-queue = Queue()
+
+q=Queue()
+
 for i in range(4):
-    queue.put(int(input()))
+    q.put(int(input()))
+    
 for i in range(4):
-     print(queue.get())
+    print(q.get())
 ```
 ### Output:
- ![image](https://github.com/user-attachments/assets/26a380ff-118e-43f4-8178-83a5417262b5)
- 
 
-### Result: Thus, the given program is implemented and executed successfully .
+![image](https://github.com/user-attachments/assets/1c4c3741-ef9f-421d-8a39-0e2b098c6cfb)
+
+### Result:
+
+Thus,the given program is implemented and executed successfully.
  
 
