@@ -19,10 +19,10 @@ To Write a python program to get the integer values from the user and push only 
 
 
 ### Program:
-```python
-# Name: Nidhish B
-# Reg.No: 212223050032
-
+```
+# Reg.No-212223050048
+# Name-SIBIRAJI M
+# Write your code here
 n=int(input())
 l=[]
 for i in range(n):
@@ -70,10 +70,10 @@ To Write a python program to implement the stack using deque method for rotating
 
 ### Program: 
 
-```python
-# Name: Nidhish B
-# Reg.No: 212223050032
-
+```
+# Reg.No-212223050048
+# Name-SIBIRAJI M
+# Write your code here
 import collections
 def fun(n):
     de=collections.deque([])
@@ -114,10 +114,10 @@ To Develop a python program to remove the last 3 values from the queue.
 7. End
 
 ### Program:
-```python
-# Name: Nidhish B
-# Reg.No: 212223050032
-
+```
+# Reg.No-212223050048
+# Name-SIBIRAJI M
+# Write your code here
 q=[]
 n=int(input())
 
@@ -156,10 +156,10 @@ To Develop a python program to get the 4 integer values from user and display th
 
 ### Program:
 
-```python
-# Name: Nidhish B
-# Reg.No: 212223050032
-
+```
+# Reg.No-212223050048
+# Name-SIBIRAJI M
+# Write your code here
 from multiprocessing import Queue
 
 q=Queue()
